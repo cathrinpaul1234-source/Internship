@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .heading h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .heading p {
+            color: gray;
+            font-size: 22px;
+            line-height: 1.6;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 320px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            padding: 25px;
+            font-size: 22px;
+            border-bottom: 1px solid #ddd;
+            background: #fafafa;
+        }
+
+        .enterprise .card-header {
+            background: #0d6efd;
+            color: white;
+        }
+
+        .card-body {
+            padding: 35px 25px;
+        }
+
+        .price {
+            font-size: 55px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .price span {
+            font-size: 30px;
+            color: gray;
+            font-weight: normal;
+        }
+
+        .card-body p {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            padding: 15px;
+            border-radius: 6px;
+            border: 2px solid #0d6efd;
+            font-size: 22px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .outline-btn {
+            background: white;
+            color: #0d6efd;
+        }
+
+        .outline-btn:hover {
+            background: #0d6efd;
+            color: white;
+        }
+
+        .fill-btn {
+            background: #0d6efd;
+            color: white;
+            border: none;
+        }
+
+        .fill-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Pricing</h1>
+
+        <p>
+            Quickly build an effective pricing table for your potential customers
+            with this Bootstrap example. It’s built with default Bootstrap components
+            and utilities with little customization.
+        </p>
+    </div>
+
+    <div class="pricing-container">
+
+        <!-- Free -->
+        <div class="card">
+            <div class="card-header">Free</div>
+
+            <div class="card-body">
+                <div class="price">$0<span>/mo</span></div>
+
+                <p>10 users included</p>
+                <p>2 GB of storage</p>
+                <p>Email support</p>
+                <p>Help center access</p>
+
+                <button class="btn outline-btn">
+                    Sign up for free
+                </button>
+            </div>
+        </div>
+
+        <!-- Pro -->
+        <div class="card">
+            <div class="card-header">Pro</div>
+
+            <div class="card-body">
+                <div class="price">$15<span>/mo</span></div>
+
+                <p>20 users included</p>
+                <p>10 GB of storage</p>
+                <p>Priority email support</p>
+                <p>Help center access</p>
+
+                <button class="btn fill-btn">
+                    Get started
+                </button>
+            </div>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="card enterprise">
+            <div class="card-header">Enterprise</div>
+
+            <div class="card-body">
+                <div class="price">$29<span>/mo</span></div>
+
+                <p>30 users included</p>
+                <p>15 GB of storage</p>
+                <p>Phone and email support</p>
+                <p>Help center access</p>
+
+                <button class="btn fill-btn">
+                    Contact us
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
