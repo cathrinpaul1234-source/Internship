@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopsy Section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .title span {
+            color: #ff5a1f;
+        }
+
+        .description {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            max-width: 850px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 55px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .right {
+            flex: 0.8;
+            text-align: center;
+        }
+
+        .right img {
+            width: 100%;
+            max-width: 420px;
+        }
+
+        @media(max-width:992px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .title {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <h1 class="title">
+                Why do <span>Sellers love Shopsy?</span>
+            </h1>
+
+            <p class="description">
+                Shopsy by Flipkart is the one stop shopping destination for 20 Crore+
+                customers across India. Experience the rapid growth on Shopsy by
+                Flipkart and join our community of successful sellers.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png">
+                    <h3>0% Commission</h3>
+                    <p>
+                        Make your business more profitable from day one.
+                        Enjoy zero commission charges on all Shopsy verticals.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/921/921347.png">
+                    <h3>Opportunity</h3>
+                    <p>
+                        Reach 20Cr+ customers across 19,000+ pincodes
+                        and get access to festivals like Grand Shopsy Mela.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png">
+                    <h3>Low Cost of doing Business</h3>
+                    <p>
+                        Get access to a well established logistic network &
+                        deliver your products to 19,000+ pincodes.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
+                    <h3>Ease of doing business</h3>
+                    <p>
+                        No additional paperwork is required making it a
+                        relatively simple process.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="https://img.freepik.com/free-photo/indian-woman-saree_23-2149400853.jpg" alt="">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
