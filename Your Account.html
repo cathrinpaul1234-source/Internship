@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Account UI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 25px;
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .icon {
+            font-size: 45px;
+        }
+
+        .content h2 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .content p {
+            color: #555;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        @media(max-width:900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Your Account</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="icon">📦</div>
+            <div class="content">
+                <h2>Your Orders</h2>
+                <p>Track, return, or buy things again</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔒</div>
+            <div class="content">
+                <h2>Login & Security</h2>
+                <p>Edit login, name, and mobile number</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">📘</div>
+            <div class="content">
+                <h2>Prime</h2>
+                <p>View benefits and payment settings</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">📍</div>
+            <div class="content">
+                <h2>Your Addresses</h2>
+                <p>Edit addresses for orders and gifts</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏢</div>
+            <div class="content">
+                <h2>Your Business Account</h2>
+                <p>Save with GST invoice and bulk discounts.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">💳</div>
+            <div class="content">
+                <h2>Payment Options</h2>
+                <p>Edit or add payment methods</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🟧</div>
+            <div class="content">
+                <h2>Amazon Pay Balance</h2>
+                <p>Add money to your balance</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎧</div>
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Contact customer service via phone or chat</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
